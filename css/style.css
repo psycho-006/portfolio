@@ -1,0 +1,725 @@
+/* ---------------- Genarel Section ----------------- */
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.section-underline {
+    height: 2px;
+    width: 50px;
+    background: #00A1FF;
+    margin-left: calc(50% - 25px);
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+/*----------------- Home Seciton -----------------*/
+#home {
+    background: url(../images/home-bg-phone-2.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-section {
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.home-nav .maruf {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shafique {
+    display: none;
+}
+
+.home-nav {
+    line-height: 46px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.home-nav a {
+    color: #00A1FF;
+    font-size: 16px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.home-nav a:active,
+.home-nav a:hover {
+    border: none;
+}
+
+.home-des-wrap {
+    text-align: center;
+    color: #f2f3f3;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.home-des-wrap .welcome {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.home-des-wrap h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.home-des-wrap .underline-home {
+    display: block;
+    height: 2px;
+    width: 80px;
+    background: #00A1FF;
+    margin-left: calc(50% - 40px);
+}
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.home-btn-group {
+    display: none;
+}
+
+.home-des-wrap .fa-arrow-down {
+    display: none;
+}
+
+/* --------------- Nav Section --------------- */
+#main-nav {
+    display: none;
+}
+
+/*----------------- Work Section ---------------*/
+#work {
+    background: #eaebeb;
+}
+
+.section-work {
+    padding-top: 30px;
+}
+
+.section-work > .container > p {
+    margin-bottom: 40px;
+}
+
+.img-wrapper {
+    margin-bottom: 20px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-img-desc {
+    display: none;
+}
+
+.section-work .col-sm-6:nth-child(-n+4) .img-wrapper {
+    display: none;
+}
+
+/* -------------- Feature Section ------------------- */
+.section-feature {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section-feature p {
+    margin-bottom: 30px;
+}
+
+.feature-wrapper {
+    margin-bottom: 15px;
+}
+
+.feature-desc {
+    height: 100%;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+}
+
+.feature-desc-icon {
+    border-bottom: 1px solid #e1e2e3;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.feature-desc-icon i {
+    font-size: 8rem;
+    color: #00A1FF;
+}
+
+.feature-desc-full {
+    margin: 5px;
+}
+
+.feature-desc-full h4 {
+    padding-top: 10px;
+}
+
+/* --------------- About Section --------------- */
+.section-about {
+    background: url(../images/about-bg-phone.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-pic-wrapper {
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    height: 200px;
+}
+
+.profile-pic-inner img {
+    position: absolute;
+    left: calc(50% - 60px);
+    bottom: -60px;
+    z-index: 1;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.profile-desc-wrapper {
+    background: #fff;
+    padding-top: 100px;
+}
+
+/* ---------------- Section Timeline ---------------- */
+#timeline {
+    background: linear-gradient(132deg, #ec5218, #1665c1);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.section-timeline {
+    padding-top: 30px;
+}
+
+.section-timeline h2 {
+    color: #fff;
+}
+
+.section-timeline > p {
+    color: #fff;
+    text-align: center;
+}
+
+.timeline-wrapper .timeline-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 30px;
+}
+
+.timeline-wrapper .timeline-ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 1px dashed #aaa;
+}
+
+.timeline-li-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    position: relative;
+    padding: 4px;
+    background: rgba(18, 109, 184, 0.3);
+    color: #bbb;
+}
+
+.timeline-li-wrapper .timeline-circle {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -31px;
+    width: 0;
+    height: 100%;
+    border: 1px solid #aaa;
+}
+
+.timeline-li-wrapper .timeline-circle::before,
+.timeline-li-wrapper .timeline-circle::after {
+    content: '';
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #00A1FF;
+    border-radius: 50%;
+    left: -7px;
+    background: #00A1FF;
+}
+
+.timeline-li-wrapper .timeline-circle::before {
+    top: -5px;
+}
+
+.timeline-li-wrapper .timeline-circle::after {
+    bottom: -7px;
+}
+
+.timeline-li-wrapper {
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.timeline-title h4 {
+    font-size: 1.3rem;
+}
+
+.timeline-desc p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.timeline-ul li .time {
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 30px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* ------------------- Service Section ------------------ */
+#service {
+    background: #0000001e;
+}
+
+.section-service {
+    padding-top: 40px;
+}
+
+.section-service > p {
+    margin-bottom: 30px;
+}
+
+.service-icon {
+    width: 30%;
+    float: left;
+    font-size: 3.8rem;
+    padding: 0;
+    text-align: center;
+    color: #00A1FF;
+}
+
+.service-icon .service-icon-border {
+    margin-top: 10px;
+    width: 2px;
+    height: 70px;
+    background: #00A1FF;
+    float: right;
+}
+
+.service-desc {
+    width: 70%;
+    float: right;
+    padding-left: 10px;
+}
+
+.service-desc h3 {
+    font-size: 1.4rem;
+}
+
+.service-desc p {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/* --------------- Contact Section ------------------- */
+#contact {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: #2b2b2b;
+    color: #a2a2a2;
+}
+
+.section-contact .fa-map-marker,
+.section-contact .fa-envelope-square {
+    color: #00A1FF;
+}
+
+.rajshahi {
+    padding-left: 16px;
+}
+
+.social-icon {
+    text-align: left;
+}
+
+.social-icon i {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.social-icon .fa-facebook-square {
+    color: #1777f1;
+}
+
+.social-icon .fa-twitter-square {
+    color: #579cf5;
+}
+
+.social-icon .fa-linkedin {
+    color: #4d41dd;
+}
+
+.social-icon .fa-github-square {
+    color: #756ce4;
+}
+
+/* ----------------- Footer Section --------------- */
+footer {
+    background: #010409;
+    color: #fff;
+}
+
+.footer-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: inline;
+}
+
+.footer-left p {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.footer-arrow-up {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-arrow-up i {
+    padding: 9px;
+    text-align: center;
+    line-height: 15px;
+    border: 2px solid #00A1FF;
+    color: #00A1FF;
+    border-radius: 50%;
+
+}
+
+/* --------------- Responsive Layout ----------------- */
+/* --------------- Minimun Width Medium ---------------  */
+@media only screen and (min-width: 768px) {
+    /* ------------- Home Section ----------------- */
+    #home {
+        height: 100%;
+        background-attachment: fixed;
+    }
+
+    .shafique {
+        display: inline;
+    }
+
+    .maruf {
+        font-size: 25px;
+    }
+
+    .home-des-wrap {
+        padding-top: 100px;
+    }
+
+    .welcome {
+        font-size: 24px;
+    }
+
+    .home-des-wrap h1 {
+        font-size: 84px;
+    }
+
+    .about {
+        text-align: justify;
+        padding-left: 10px;
+        padding-top: 40px;
+        font-size: 1.4rem;
+        position: relative;
+    }
+
+    .home-btn-group {
+        display: block;
+    }
+
+    .home-des-wrap .arrow-down {
+        color: #fff;
+        transition: .5s;
+    }
+
+    .home-des-wrap .fa-arrow-down {
+        display: block;
+        font-size: 1.9rem;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+    }
+
+    .home-des-wrap .arrow-down:hover {
+        color: #00A1FF;
+    }
+
+    .btn-service,
+    .btn-work {
+        color: #00A1FF;
+        border: 1px solid #00A1FF;
+        margin-bottom: 60px;
+    }
+
+    .btn-work {
+        margin-left: 20px;
+    }
+
+    .btn-service:hover,
+    .btn-work:hover {
+        background: #00A1FF;
+    }
+
+    /* ----------------- Section Nav ----------------- */
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    /* --------------- Section Work ---------------- */
+    .take-look {
+        font-size: 1.2rem;
+    }
+
+    .img-wrapper {
+        overflow: hidden;
+    }
+
+    .img-wrapper img {
+        transition: all .5s ease-in-out;
+    }
+
+    .img-wrapper img:hover {
+        transform: scale(1.3);
+    }
+
+
+    /* -------------- Section About ------------------ */
+    .section-about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-attachment: fixed;
+        color: #acacb1;
+    }
+
+    .profile-pic-wrapper,
+    .profile-desc-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        background: transparent;
+        height: 100%;
+    }
+
+    .profile-pic-inner img {
+        position: unset;
+        line-height: 300px;
+        height: 200px;
+        width: 200px;
+    }
+
+    /* ------------- Timeline Section -------------------- */
+    .timeline-wrapper .timeline-ul::before {
+        left: 50%;
+    }
+
+    .section-timeline > p {
+        font-size: 1.2rem;
+    }
+
+    .timeline-wrapper .timeline-ul li {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .timeline-wrapper .timeline-ul li::before,
+    .timeline-wrapper .timeline-ul li::after {
+        content: '';
+        display: table;
+    }
+
+    .timeline-wrapper .timeline-ul li::after {
+        clear: both;
+    }
+
+    .timeline-ul .timeline-li-wrapper {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+
+    .timeline-title h4 {
+        font-size: 1.6rem;
+    }
+
+    .timeline-desc p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .timeline-ul li:nth-child(odd) {
+        padding-right: 40px;
+    }
+
+    .timeline-ul li:nth-child(even) {
+        padding-left: 40px;
+    }
+
+    .timeline-ul li:nth-child(even) .timeline-li-wrapper {
+        float: right;
+    }
+
+    .timeline-ul li:nth-child(odd) .timeline-circle {
+        left: calc(100% + 21px);
+    }
+
+    .timeline-ul li:nth-child(odd) .time {
+        left: calc(100% + 25px);
+    }
+
+    .timeline-ul li:nth-child(even) .timeline-circle {
+        left: -21px;
+    }
+
+    .timeline-ul li:nth-child(even) .time {
+        left: -60px;
+    }
+    
+    /* ---------------- Section Service ----------------------- */
+    .section-service {
+        padding-bottom: 40px;
+    }
+
+    .service-paragraph {
+        font-size: 1.2rem;
+    }
+
+    /* -------------- Contact ---------------- */
+    .ready-to-start {
+        margin-bottom: 50px;
+    }
+
+    .footer-arrow-up {
+        text-align: right;
+    }
+
+} /*--------------------- end medium display --------------------*/
+
+@media only screen and (min-width: 768px)  and (max-width: 992px) {
+    /* ---------------- Section Service ----------------------- */
+
+    .service-icon {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-icon-border {
+        display: none;
+    }
+
+    .service-desc {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+/* ----------------- Lage Screen ------------------------ */
+@media only screen and (min-width: 992px) {
+    /* ----------- Work Section --------------- */
+    .take-look {
+        padding-bottom: 30px;
+    }
+
+    /* -------------------- Feature Section----------------- */
+    .section-feature .section-underline {
+        margin-bottom: 45px;
+    }
+
+    /* -------------------- Timeline Section----------------- */
+    .section-timeline > p {
+        padding-bottom: 40px;
+    }
+
+    .timeline-ul li:nth-child(odd),
+    .timeline-ul li:nth-child(even) {
+        margin-bottom: 80px;
+    }
+
+    .timeline-ul li:nth-child(odd) {
+        padding-right: 120px;
+        padding-left: 40px;
+    }
+
+    .timeline-ul li:nth-child(even) {
+        padding-left: 120px;
+        padding-right: 40px;
+    }
+
+    .timeline-ul li:nth-child(odd) .timeline-circle {
+        left: calc(100% + 41px);
+    }
+
+    .timeline-ul li:nth-child(odd) .time {
+        left: calc(100% + 42px);
+    }
+
+    .timeline-ul li:nth-child(even) .timeline-circle{
+        left: -41px;
+    }
+
+    .timeline-ul li:nth-child(even) .time {
+        left: -80px;
+    }
+
+    /* ----------- Service Seciton ------------------ */
+    .service-paragraph {
+        padding-bottom: 50px;
+    }
+
+    /* ---------------- Contact Section --------------- */
+    .ready-to-start {
+        margin-bottom: 90px;
+    }
+
+    .section-contact .row {
+        padding-bottom: 60px;
+    }
+}/* ----------------- end Lage Screen ------------------------ */
